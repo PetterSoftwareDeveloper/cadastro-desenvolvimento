@@ -7,34 +7,29 @@ package br.com.primeup.cadastro.dominio;
  */
 public class Nivel {
 
-	private String id;
+	private Long id;
 	private String nome;
 	
-	
-	/**
-	 * @param id
-	 * @param nome
-	 */
-	public Nivel(String id, String nome) {
+	public Nivel(Long id, String nome) {
 		super();
 		this.id = id;
 		this.nome = nome;
 	}
 
-	public String getId() {
+	public Long getId() {
 		return id;
 	}
-	
-	public void setId(String id) {
+
+	public void setId(Long id) {
 		this.id = id;
 	}
-	
+
 	public String getNome() {
 		return nome;
 	}
-	
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
+	
 }

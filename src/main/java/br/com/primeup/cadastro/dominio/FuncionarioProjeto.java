@@ -1,5 +1,6 @@
 package br.com.primeup.cadastro.dominio;
 
+import br.com.primeup.cadastro.dominio.enums.EnumMes;
 
 /**
  * @author Pedro Macedo
@@ -8,46 +9,49 @@ package br.com.primeup.cadastro.dominio;
  */
 public class FuncionarioProjeto {
 	
-	private String id;
-	private Integer quantidadeDeHoras;
-	private Integer ano;
+	private Long id;
+	private int quantidadeDeHoras;
+	private int ano;
+	private EnumMes enummes;
 	
-	
-	/**
-	 * @param id
-	 * @param quantidadeDeHoras
-	 * @param ano
-	 */
-	public FuncionarioProjeto(String id, Integer quantidadeDeHoras, Integer ano) {
+	public FuncionarioProjeto(Long id, int quantidadeDeHoras, int ano, EnumMes enummes) {
 		super();
 		this.id = id;
 		this.quantidadeDeHoras = quantidadeDeHoras;
 		this.ano = ano;
+		this.enummes = enummes;
 	}
 
-	public String getId() {
+	public Long getId() {
 		return id;
 	}
-	
-	public void setId(String id) {
+
+	public void setId(Long id) {
 		this.id = id;
 	}
-	
-	public Integer getQuantidadeDeHoras() {
+
+	public int getQuantidadeDeHoras() {
 		return quantidadeDeHoras;
 	}
-	
-	public void setQuantidadeDeHoras(Integer quantidadeDeHoras) {
+
+	public void setQuantidadeDeHoras(int quantidadeDeHoras) {
 		this.quantidadeDeHoras = quantidadeDeHoras;
 	}
-	
-	public Integer getAno() {
+
+	public int getAno() {
 		return ano;
 	}
-	
-	public void setAno(Integer ano) {
+
+	public void setAno(int ano) {
 		this.ano = ano;
 	}
-	
+
+	public EnumMes getEnummes() {
+		return enummes;
+	}
+
+	public void setEnummes(EnumMes enummes) {
+		this.enummes = enummes;
+	}
 	
 }

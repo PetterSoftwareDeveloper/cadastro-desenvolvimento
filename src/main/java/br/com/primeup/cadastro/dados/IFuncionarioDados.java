@@ -2,7 +2,7 @@ package br.com.primeup.cadastro.dados;
 
 import br.com.primeup.cadastro.dominio.Funcionario;
 
-public interface IFuncionario {
+public interface IFuncionarioDados {
 	
 	void cadastrar (Funcionario funcionario);
 

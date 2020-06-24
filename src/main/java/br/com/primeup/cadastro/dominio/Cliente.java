@@ -7,44 +7,29 @@ package br.com.primeup.cadastro.dominio;
  */
 public class Cliente {
 
-	private String id;
-	private Integer quantidadeDeHoras;
-	private Integer ano;
+	private Long id;
+	private String nome;
 	
-	/**
-	 * @param id
-	 * @param quantidadeDeHoras
-	 * @param ano
-	 */
-	public Cliente(String id, Integer quantidadeDeHoras, Integer ano) {
+	public Cliente(Long id, String nome) {
 		super();
 		this.id = id;
-		this.quantidadeDeHoras = quantidadeDeHoras;
-		this.ano = ano;
+		this.nome = nome;
 	}
-	
-	public String getId() {
+
+	public Long getId() {
 		return id;
 	}
-	
-	public void setId(String id) {
+
+	public void setId(Long id) {
 		this.id = id;
 	}
-	
-	public Integer getQuantidadeDeHoras() {
-		return quantidadeDeHoras;
+
+	public String getNome() {
+		return nome;
 	}
-	
-	public void setQuantidadeDeHoras(Integer quantidadeDeHoras) {
-		this.quantidadeDeHoras = quantidadeDeHoras;
-	}
-	
-	public Integer getAno() {
-		return ano;
-	}
-	
-	public void setAno(Integer ano) {
-		this.ano = ano;
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	
 }

@@ -7,15 +7,21 @@ package br.com.primeup.cadastro.dominio;
  */
 public class CargoNivel {
 
-	private String id;
+	private Long id;
 
-	public String getId() {
+	public CargoNivel(Long id) {
+		super();
+		this.id = id;
+	}
+
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
+	
 	
 
 }

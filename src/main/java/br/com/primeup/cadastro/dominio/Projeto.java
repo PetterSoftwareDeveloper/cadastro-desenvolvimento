@@ -9,78 +9,69 @@ import java.util.Date;
  */
 public class Projeto {
 	
-	private String id;
+	private Long id;
 	private String nome;
+	private String projectKey;
 	private String apelido;
-	private String chave;
 	private Date dataInicio;
 	private Date dataTermino;
 	
-	/**
-	 * @param id
-	 * @param nome
-	 * @param apelido
-	 * @param chave
-	 * @param dataInicio
-	 * @param dataTermino
-	 */
-	public Projeto(String id, String nome, String apelido, String chave, Date dataInicio, Date dataTermino) {
+	public Projeto(Long id, String nome, String projectKey, String apelido, Date dataInicio, Date dataTermino) {
 		super();
 		this.id = id;
 		this.nome = nome;
+		this.projectKey = projectKey;
 		this.apelido = apelido;
-		this.chave = chave;
 		this.dataInicio = dataInicio;
 		this.dataTermino = dataTermino;
 	}
-	
-	public String getId() {
+
+	public Long getId() {
 		return id;
 	}
-	
-	public void setId(String id) {
+
+	public void setId(Long id) {
 		this.id = id;
 	}
-	
+
 	public String getNome() {
 		return nome;
 	}
-	
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	
+
+	public String getProjectKey() {
+		return projectKey;
+	}
+
+	public void setProjectKey(String projectKey) {
+		this.projectKey = projectKey;
+	}
+
 	public String getApelido() {
 		return apelido;
 	}
-	
+
 	public void setApelido(String apelido) {
 		this.apelido = apelido;
 	}
-	
-	public String getChave() {
-		return chave;
-	}
-	
-	public void setChave(String chave) {
-		this.chave = chave;
-	}
-	
+
 	public Date getDataInicio() {
 		return dataInicio;
 	}
-	
+
 	public void setDataInicio(Date dataInicio) {
 		this.dataInicio = dataInicio;
 	}
-	
+
 	public Date getDataTermino() {
 		return dataTermino;
 	}
-	
+
 	public void setDataTermino(Date dataTermino) {
 		this.dataTermino = dataTermino;
 	}
-	
 	
 }
